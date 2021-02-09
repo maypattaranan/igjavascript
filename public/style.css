@@ -1,0 +1,141 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(to right bottom, salmon, #b081fb);
+  width: 100%;
+  min-height: 100vh;
+}
+
+.content-container {
+  margin-top: 2rem;
+  overflow: hidden;
+  width: 90%;
+  max-width: 800px;
+}
+
+.head,
+.like,
+.caption {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 15px;
+  padding: 0.3rem 1rem;
+  background-color: white;
+}
+
+.caption {
+  gap: 10px;
+}
+
+.head-pic img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px salmon double;
+  box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.7);
+  margin: 2px 0 0 0;
+  animation: glow 1s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 7px rgb(250, 91, 170);
+  }
+  to {
+    box-shadow: 0 0 5px rgb(246, 246, 146);
+  }
+}
+
+.content img {
+  background-color: black;
+  /* padding: 3rem 0 */
+  display: inherit;
+  width: 100%;
+  min-height: 300px;
+  object-fit: cover;
+}
+
+/* SVG Heart */
+svg {
+  width: 35px;
+  height: 35px;
+}
+
+.heart-toggle {
+  fill: rgb(237, 73, 86);
+  stroke: rgb(237, 73, 86);
+}
+
+.heart-animation {
+  animation-duration: 0.35s;
+  animation-name: like-button-animation;
+  animation-timing-function: ease-in-out;
+  transform: scale(1);
+}
+
+@keyframes like-button-animation {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.25);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  75% {
+    transform: scale(1.25);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+form input {
+  font-family: inherit;
+  font-size: inherit;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  border: 3px solid transparent;
+  background-color: #fff;
+  color: #333;
+  outline: 0px;
+  line-height: 1.5rem;
+  padding: 1rem 20px 1rem 50px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 2px 0px;
+  appearance: none;
+  transition: all 0.2s ease;
+}
+
+div.relative-icon-container {
+  position: relative;
+}
+
+svg.icon-emoji {
+  position: absolute;
+  top: 45%;
+  left: 10px;
+  transform: translate(0, -50%);
+  width: 2rem;
+  height: 2rem;
+}
+
+.comment-container {
+  background-color: #fff;
+  color: inherit;
+  line-height: 1.5rem;
+  padding: 1rem 1rem;
+}

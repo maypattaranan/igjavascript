@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Tester</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="content-container">
+        <div class="head">
+          <div class="head-pic"><img src="./resource/may.jpeg" alt="" /></div>
+          <div class="head-user"><strong>may.pattaranan</strong></div>
+        </div>
+        <div class="content">
+          <img src="./resource/helsingborg.jpg" alt="" />
+        </div>
+        <div class="like">
+          <svg
+            class="icon-heart"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="black"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1"
+              d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+            />
+          </svg>
+          <div>
+            <span class="like-counter"></span>
+            likes
+          </div>
+        </div>
+        <div class="caption">
+          <p><strong>may.pattaranan</strong></p>
+          <p>Rådhuset i Helsingborg</p>
+        </div>
+        <form class="container-comment">
+          <div class="comment-container"></div>
+          <div class="relative-icon-container">
+            <input
+              class="container-comment-input"
+              type="text"
+              name="text"
+              placeholder="Write a comment here"
+              required
+              autofocus
+              autocomplete="off"
+            />
+            <svg
+              class="icon-emoji"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+            </svg>
+          </div>
+        </form>
+      </div>
+    </main>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
