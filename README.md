@@ -1,6 +1,5 @@
 # Instagram Clone: Like and Comment
-
-## A simple Instagram cloned page
+A simple Instagram cloned page
 Function:
 - Like button
 - Comment section + emojis
