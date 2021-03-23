@@ -1,5 +1,5 @@
-# Instagram: Like and Comment functionality
-A simple Instagram cloned page using HTML, vanilla CSS and Javascript
+# Instagram: Building liking and commenting functionality using Javascript
+A simple Instagram cloned page
 Function:
 - Like button
 - Comment section + emojis
